@@ -3,24 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to USTP</title>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('download (5).jpg');  
+            background-size: cover;  
+            background-position: center;  
+            background-attachment: fixed;  
+        }
+
+        .home-container {
+            background-color: rgba(155, 158, 202, 0.8); 
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(110, 102, 102, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #212721;
+        }
+
+        img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .home-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #6e605e;  
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .home-btn:hover {
+            background-color: #3a423a; 
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to USTP</h1>
 
-    <nav>
-        <a href="HOME.html">HOME</a>
-        <a href="ABOUT.html">ABOUT</a>
-        <a href="services.html">SERVICES</a>
-        <a href="page.html">PAGES</a>
-        <a href="blog.html">BLOG</a>
-        <a href="contact.html">CONTACT</a>
-    </nav>
+    <div class="home-container">
+        <h1>Welcome to My Home Page</h1>
 
-    <br><br>
+        <img src="download.jpg" alt="Image" />
+        
+        <p>You have successfully logged in. Click below to go to the Rolds page.</p>
 
-    <p>The owner of this Website:</p>
-    <p><strong>Harold M. Coyoca</strong></p>
-    <p>222232425 | 21</p>
+       
+        <button class="home-btn" onclick="window.location.href='home.html'">Back</button>
+    </div>
+    
+
 </body>
 </html>

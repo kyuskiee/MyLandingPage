@@ -60,50 +60,63 @@
 <body>
 
     <header>
-        <h1>Welcome to the Hair Cut & Rebond Blog</h1>
-        <p>All things haircuts and hair rebonding in one place!</p>
+        <h1>Welcome to the Hair Cut Blog</h1>
+        
     </header>
 
     <div class="container">
         <div class="main-content">
-            <!-- Hair Cut Post -->
+            
             <div class="post">
                 <h2>Top Haircuts for 2025</h2>
-                <p><em>Posted on February 6, 2025</em></p>
+
                 <p>From trendy pixie cuts to classic bobs, discover the top haircuts for 2025.</p>
-                <a href="#">Read more...</a>
+                
             </div>
 
-            <!-- Rebond Post -->
-            <div class="post">
-                <h2>The Benefits of Hair Rebonding</h2>
-                <p><em>Posted on February 5, 2025</em></p>
-                <p>Hair rebonding is a popular technique for straightening and taming unruly hair.</p>
-                <a href="#">Read more...</a>
-            </div>
-
-            <!-- Hair Cut Tips Post -->
+            
             <div class="post">
                 <h2>How to Choose the Right Haircut for Your Face Shape</h2>
-                <p><em>Posted on February 4, 2025</em></p>
+               
                 <p>Choosing the right haircut for your face shape can make a big difference!</p>
-                <a href="#">Read more...</a>
+                
             </div>
 
-            <!-- Rebond Tips Post -->
-            <div class="post">
-                <h2>Aftercare Tips for Hair Rebonding</h2>
-                <p><em>Posted on February 3, 2025</em></p>
-                <p>Hair rebonding requires proper aftercare to keep your hair healthy and shiny.</p>
-                <a href="#">Read more...</a>
-            </div>
-        </div>
+            
+           
 
         <div class="sidebar">
             <h3>About the Author</h3>
             <p>I am a professional hairstylist with years of experience.</p>
         </div>
 
+        
+        <video id="myVideo" width="300" controls>
+            <source src="russelempahasis_1738863852_musicaldown.com[HD].mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio id="myAudio" controls>
+            <source src="ssstik.io_1738868905082.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    
+        <script>
+            
+            const video = document.getElementById('myVideo');
+            const audio = document.getElementById('myAudio');
+    
+          
+            video.onplay = function() {
+                audio.play();
+            };
+    
+            
+            audio.onended = function() {
+                video.pause();
+            };
+        </script>
 
+       
+      <p><a href="home.html">Back</a></p> 
 </body>
 </html>
