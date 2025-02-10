@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Cut & Rebond Services</title>
+    <title>Hair Cut Services</title> 
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,39 +11,83 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
         }
+
         section {
             padding: 20px;
+            margin-top: 30px;
         }
+
         .service {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            margin: 10px 0;
+            background-color: #f8f2f2;
+            border: 1px solid #ad9f9f;
+            margin: 20px 0;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
         .service h2 {
             color: #333;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
         }
+
         .service p {
             color: #555;
-            font-size: 1.1em;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
+
+        .service ul {
+            list-style: none;
+            padding-left: 0;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .service ul li {
+            margin-bottom: 8px;
+        }
+
         footer {
             background-color: #333;
-            color: white;
+            color: rgb(172, 169, 169);
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            font-size: 1rem;
         }
+
+        footer a {
+            color: #c4c1c1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #1f1d1a;
+        }
+
+
     </style>
 </head>
 <body>
@@ -52,31 +96,26 @@
         <h1>Hair Cut & Rebond Services</h1>
     </header>
 
+
     <section>
-       
+
         <div class="service">
             <h2>Hair Cut</h2>
-            <p>Our professional hairstylists will give you the perfect cut.</p>
+            <p>Our professional hairstylists will give you the perfect cut tailored to your needs and preferences. Whether it's a trendy style or a classic look, we've got you covered.</p>
             <ul>
                 <li>Classic Haircut</li>
                 <li>Trendy Styles</li>
                 <li>Men's & Women's Haircuts</li>
+                <li>Children's Haircuts</li>
             </ul>
         </div>
 
-      
-        <div class="service">
-            <h2>Hair Rebond</h2>
-            <p>Experience sleek, straight hair with our premium hair rebonding service.</p>
-            <ul>
-                <li>Permanent Straightening</li>
-                <li>Frizz Control</li>
-                <li>For All Hair Types</li>
-            </ul>
-        </div>
+
     </section>
 
-    <p><a href="home.html">Back</a></p> 
+    <footer>
+        <p><a href="home.html">Back to Home</a></p>
+    </footer>
 
 </body>
 </html>

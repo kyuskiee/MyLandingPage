@@ -11,57 +11,109 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
         .container {
             display: flex;
+            flex-wrap: wrap;
             margin: 20px;
+            justify-content: space-between;
         }
+
         .main-content {
             flex: 3;
             margin-right: 20px;
+            padding: 20px;
         }
+
         .sidebar {
             flex: 1;
             background-color: #fff;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
+
         .post {
             background-color: #fff;
             border: 1px solid #ddd;
-            padding: 20px;
+            padding: 25px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         .post h2 {
             margin-top: 0;
+            font-size: 1.8rem;
+            color: #333;
         }
+
         .post p {
             color: #555;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 15px 0;
+            font-size: 1rem;
         }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #66645f;
+        }
+
+        video {
+            width: 30%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .sidebar h3 {
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .sidebar p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+       
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to the Hair Cut Blog</h1>
-        
+        <h1>Welcome to My Haircut Blog</h1>
     </header>
 
     <div class="container">
@@ -69,54 +121,40 @@
             
             <div class="post">
                 <h2>Top Haircuts for 2025</h2>
-
-                <p>From trendy pixie cuts to classic bobs, discover the top haircuts for 2025.</p>
-                
+                <p>The top haircuts for 2025. Stay ahead of the curve with our recommendations for stylish, easy-to-maintain looks that work for all hair types.</p>
             </div>
 
-            
+
             <div class="post">
                 <h2>How to Choose the Right Haircut for Your Face Shape</h2>
-               
-                <p>Choosing the right haircut for your face shape can make a big difference!</p>
-                
+                <p>Choosing the right haircut for your face shape can make a big difference! Learn which styles flatter your features and help you enhance your natural beauty.</p>
             </div>
 
-            
-           
+        </div>
+
+
 
         <div class="sidebar">
             <h3>About the Author</h3>
-            <p>I am a professional hairstylist with years of experience.</p>
+            <p>Hi! I'm a professional hairstylist with years of experience. My mission is to help you look and feel your best with personalized haircuts and styling advice.</p>
         </div>
+    </div>
 
-        
-        <video id="myVideo" width="300" controls>
-            <source src="russelempahasis_1738863852_musicaldown.com[HD].mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <audio id="myAudio" controls>
-            <source src="ssstik.io_1738868905082.mp3" type="audio/mp3">
-            Your browser does not support the audio tag.
-        </audio>
-    
-        <script>
-            
-            const video = document.getElementById('myVideo');
-            const audio = document.getElementById('myAudio');
-    
-          
-            video.onplay = function() {
-                audio.play();
-            };
-    
-            
-            audio.onended = function() {
-                video.pause();
-            };
-        </script>
+    <video id="myVideo" controls>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> 
 
-       
-      <p><a href="home.html">Back</a></p> 
+
+    <video id="myVideo" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> 
+
+
+    <footer>
+        <p><a href="home.html">Back to Home</a></p>
+    </footer>
+
 </body>
 </html>

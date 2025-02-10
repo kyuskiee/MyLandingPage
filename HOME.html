@@ -3,89 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Haircut & Rebond Shop</title>
+    <title>Welcome to My Haircut </title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('f247e0ed7a3dd4ec3bd26d8592733688.jpg');  
-            background-size: cover;  
-            background-position: center;  
-            background-attachment: fixed;  
+            background-image: url('Barberías del Mundo_ Un Viaje Estético.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
             text-align: center;
-            color: #333; 
+            color: #333;
         }
 
         h1 {
-            color: #d89595;
-            margin-top: 20px;
+            color: #fff;
+            margin-top: 50px;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         nav {
-            background-color: rgba(104, 124, 107, 0.8);  
-            padding: 10px;
+            background-color: rgba(104, 124, 107, 0.8);
+            padding: 15px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
         }
 
         nav a {
             color: #fff;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-size: 18px;
+            font-weight: bold;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
+        nav .logout-button {
+            background-color: #ff4b5c;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav .logout-button:hover {
+            background-color: #ce8183;
+        }
+
         img {
-            margin: 20px auto;
+            margin: 50px auto;
+            width: 200px;
+            height: auto;
             border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
         }
 
         .content {
-            margin-top: 30px;
-            color: #292424;
+            margin-top: 40px;
+            color: #fff;
+            font-size: 18px;
         }
 
-        p {
+        .content p {
             margin: 10px 0;
+            padding: 0 15px;
+            text-align: center;
+            font-weight: 300;
         }
 
         footer {
-            margin-top: 30px;
+            margin-top: 50px;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
+            font-size: 14px;
         }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer strong {
+            color: #58a4b0;
+        }
+        
     </style>
+    <script>
+        function confirmLogout() {
+            
+            var userConfirmed = confirm("Are you sure you want to log out?");
+            if (userConfirmed) {
+               
+                window.location.href = 'login.html';
+            }
+        }
+    </script>
 </head>
 <body>
 
-    
+
     <h1>Welcome to My Haircut Men & Women</h1>
 
-    
+
     <nav>
-        <a href="rolds.html">HOME</a>
+        
         <a href="ABOUT.html">ABOUT</a>
         <a href="services.html">SERVICES</a>
         <a href="page.html">PAGES</a>
         <a href="blog.html">BLOG</a>
         <a href="contact.html">CONTACT</a>
+       
+        <button class="logout-button" onclick="confirmLogout()">Log Out</button>
     </nav>
 
-    
-    <img src="download.jpg" alt="Haircut Shop Image" width="150">
+    <img src="ohh.png" alt="Haircut Shop Logo">
 
-    
+    <div class="content">
+        <p>At My Haircut, we provide the best haircuts for men and women. Whether you’re looking for a fresh new look or simply need to maintain your current style, we’ve got you covered.</p>
+    </div>
+
     <footer>
         <p>The owner of this BarberShop:</p>
         <p><strong>Harold M. Coyoca</strong></p>
-        <p>222232425 | 21</p>
+
     </footer>
 
 </body>
 </html>
+

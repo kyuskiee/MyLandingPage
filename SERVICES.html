@@ -5,43 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
     <style>
+       
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
         }
+
         header {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
         }
+
         section {
             padding: 20px;
+            margin: 20px;
         }
+
         .service {
             background-color: #fff;
             border: 1px solid #ddd;
-            margin: 10px 0;
-            padding: 20px;
+            margin: 20px 0;
+            padding: 25px;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
         .service h3 {
             color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
+
         .service p {
             color: #555;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
+
+      
+        .service img {
+            max-width: 25%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service img:hover {
+            transform: scale(1.05);
+        }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 15px 0;
+            font-size: 1rem;
         }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #5e5649;
+        }
+
+        
+       
     </style>
 </head>
 <body>
@@ -50,17 +97,27 @@
         <h1>Our Services</h1>
     </header>
 
-    <a href="rolds.html">Back</a>
+
+
     <section>
+        
         <div class="service">
             <h3>Hair Cut</h3>
-            <p>Get a stylish haircut done by our expert barbers.</p>
+            <p>Get a stylish haircut done by our expert barbers. We offer various styles tailored to your needs. Whether it's a classic look or something trendy, we have you covered.</p>
+            <img src="download (2).jpg" alt="Haircut Service" width="100%">
         </div>
 
-        <img src="download (2).jpg" alt="Image" width="300">
+        
+        <div class="service">
+            <h3>Hair Cut </h3>
+            <p>Transform your look with our professional haircut services for girls. Achieve a stylish, smooth, and trendy haircut that complements your personality and lasts for months with our expert stylists.</p>
+            <img src="download (1).jpg" alt="Hair Rebonding Service" width="100%">
+        </div>
+    </section>
 
-        <img src="download (1).jpg" alt="Image" width="129">
-
+    <footer>
+        <p><a href="home.html">Back to Home</a></p>
+    </footer>
 
 </body>
 </html>
