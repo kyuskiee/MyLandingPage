@@ -17,6 +17,7 @@
             color: #020202;
         }
 
+        
         .container {
             display: flex;
             justify-content: center;
@@ -98,6 +99,15 @@
             color: #464d4e;
         }
 
+        .login1{
+            text-decoration: none;
+            width: 30px;
+            height: px;
+            color: rgb(77, 62, 62); 
+            font-size: 16px; 
+            font-family: Arial, sans-serif;
+  }
+
         .footer {
             margin-top: 30px;
             font-size: 12px;
@@ -109,14 +119,15 @@
 
 
 
+    <a href=""></a>
     <div class="container">
         <img src="9293c46c-fae0-49ac-a05f-428e0945af76.jpg" alt="Login Image">
         <div class="login-container">
             <h2>Login</h2>
             <form id="login-form">
-                <input type="text" id="username" placeholder="Username" required><br>
-                <input type="password" id="password" placeholder="Password" required><br>
-                <button type="submit">Login</button>
+                <label class="label1"> Username: </label><input type="text"><br><br>
+                <label class="label1"> Username: </label><input type="password"><br><br><br>
+                <button class="button1"> <a class="login1" href="HOME.html">Login</a></button>
             </form>
             <div class="signup-link">
                 <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
@@ -125,35 +136,7 @@
     </div>
     
 
-    <script>
-        document.getElementById('login-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-           
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-           
-            const storedUsername = localStorage.getItem('username');
-            const storedPassword = localStorage.getItem('password');
-
-            
-            if (storedUsername && storedPassword) {
-                if (username === storedUsername && password === storedPassword) {
-                   
-                    alert('Login successful!');
-                    window.location.href = 'home.html'; 
-                } else {
-                  
-                    alert('Invalid username or password. Please try again.');
-                }
-            } else {
-                
-                alert('No user found. Please sign up first.');
-                window.location.href = 'signup.html'; 
-            }
-        });
-    </script>
+    
 
 </body>
 </html>
